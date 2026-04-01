@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+Test set: com.fdmgroup.RealEstateApp.UserTests
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 1, Errors: 13, Skipped: 0, Time elapsed: 6.947 s <<< FAILURE! - in com.fdmgroup.RealEstateApp.UserTests
+testFindUserByUsername  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.User.getPassword()" because "user" is null
+	at com.fdmgroup.RealEstateApp.UserTests.testFindUserByUsername(UserTests.java:111)
+
+testUserSetLastName  Time elapsed: 0.005 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserSetLastName(UserTests.java:91)
+
+testUserSetPhoneNumber  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserSetPhoneNumber(UserTests.java:98)
+
+testFindByUsernameAndPassword  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.User.getEmail()" because "user" is null
+	at com.fdmgroup.RealEstateApp.UserTests.testFindByUsernameAndPassword(UserTests.java:129)
+
+testFindAllUsers  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.fdmgroup.RealEstateApp.UserTests.testFindAllUsers(UserTests.java:123)
+
+testUpdateUser  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.User.setPassword(String)" because "user" is null
+	at com.fdmgroup.RealEstateApp.UserTests.testUpdateUser(UserTests.java:141)
+
+testUserFindById  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserFindById(UserTests.java:57)
+
+testSetUserByUsername  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testSetUserByUsername(UserTests.java:117)
+
+testUserSetFirstName  Time elapsed: 0.005 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserSetFirstName(UserTests.java:84)
+
+testUserSetAccountType  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserSetAccountType(UserTests.java:70)
+
+testUserDelete  Time elapsed: 0.006 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null!; nested exception is java.lang.IllegalArgumentException: Entity must not be null!
+	at com.fdmgroup.RealEstateApp.UserTests.testUserDelete(UserTests.java:149)
+Caused by: java.lang.IllegalArgumentException: Entity must not be null!
+	at com.fdmgroup.RealEstateApp.UserTests.testUserDelete(UserTests.java:149)
+
+testFindUserByEmail  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.User.getUserName()" because "user" is null
+	at com.fdmgroup.RealEstateApp.UserTests.testFindUserByEmail(UserTests.java:105)
+
+testUserSetAccountStatus  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserSetAccountStatus(UserTests.java:63)
+
+testUserSetEmail  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.UserTests.testUserSetEmail(UserTests.java:77)
+

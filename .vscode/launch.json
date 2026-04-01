@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-App<bookshop>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.fdmgroup.RealEstateApp.App",
+      "projectName": "bookshop",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

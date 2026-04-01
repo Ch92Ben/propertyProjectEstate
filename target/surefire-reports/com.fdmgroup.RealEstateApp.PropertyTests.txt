@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.fdmgroup.RealEstateApp.PropertyTests
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 1, Errors: 12, Skipped: 0, Time elapsed: 12.525 s <<< FAILURE! - in com.fdmgroup.RealEstateApp.PropertyTests
+testUpdatePropertyTransactionStatus  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setTransactionStatus(com.fdmgroup.RealEstateApp.model.TransactionStatus)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyTransactionStatus(PropertyTests.java:112)
+
+testUpdateProperty  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertyAddress(String)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdateProperty(PropertyTests.java:145)
+
+testUpdatePropertyDescription  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertyDescription(String)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyDescription(PropertyTests.java:80)
+
+testPropertyFindById  Time elapsed: 0.014 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.PropertyTests.testPropertyFindById(PropertyTests.java:43)
+
+testUpdatePropertySeller  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setSeller(com.fdmgroup.RealEstateApp.model.User)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertySeller(PropertyTests.java:129)
+
+testFindAllProperties  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.fdmgroup.RealEstateApp.PropertyTests.testFindAllProperties(PropertyTests.java:74)
+
+testUpdatePropertyCurrentBid  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setCurrentBid(double)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyCurrentBid(PropertyTests.java:88)
+
+testUpdatePropertyNumberOfRooms  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setNumberOfRooms(int)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyNumberOfRooms(PropertyTests.java:104)
+
+testFindByPropertyAddress  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.getPropertyAddress()" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testFindByPropertyAddress(PropertyTests.java:49)
+
+testUpdatePropertySellingPrice  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setSellingPrice(double)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertySellingPrice(PropertyTests.java:96)
+
+testPropertyDelete  Time elapsed: 0.009 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null!; nested exception is java.lang.IllegalArgumentException: Entity must not be null!
+	at com.fdmgroup.RealEstateApp.PropertyTests.testPropertyDelete(PropertyTests.java:153)
+Caused by: java.lang.IllegalArgumentException: Entity must not be null!
+	at com.fdmgroup.RealEstateApp.PropertyTests.testPropertyDelete(PropertyTests.java:153)
+
+testUpdatePropertySize  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertySize(double)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertySize(PropertyTests.java:137)
+
+testUpdatePropertyType  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertyType(com.fdmgroup.RealEstateApp.model.PropertyType)" because "property" is null
+	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyType(PropertyTests.java:120)
+

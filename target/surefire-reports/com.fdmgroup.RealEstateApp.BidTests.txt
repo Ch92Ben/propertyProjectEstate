@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.fdmgroup.RealEstateApp.BidTests
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 7, Skipped: 0, Time elapsed: 3.957 s <<< FAILURE! - in com.fdmgroup.RealEstateApp.BidTests
+testBidDelete  Time elapsed: 0.007 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null!; nested exception is java.lang.IllegalArgumentException: Entity must not be null!
+	at com.fdmgroup.RealEstateApp.BidTests.testBidDelete(BidTests.java:96)
+Caused by: java.lang.IllegalArgumentException: Entity must not be null!
+	at com.fdmgroup.RealEstateApp.BidTests.testBidDelete(BidTests.java:96)
+
+testUpdateBid  Time elapsed: 0.005 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.BidTests.testUpdateBid(BidTests.java:88)
+
+testBidFindById  Time elapsed: 0.005 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.BidTests.testBidFindById(BidTests.java:42)
+
+testFindAllBids  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.fdmgroup.RealEstateApp.BidTests.testFindAllBids(BidTests.java:82)
+
+testFindBidByBidAmount  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Bid.getBidStatus()" because "bid" is null
+	at com.fdmgroup.RealEstateApp.BidTests.testFindBidByBidAmount(BidTests.java:69)
+
+testSetBidStatus  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.BidTests.testSetBidStatus(BidTests.java:48)
+
+testSetPropertyId  Time elapsed: 0.005 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.BidTests.testSetPropertyId(BidTests.java:55)
+
+testSetBidDate  Time elapsed: 0.006 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.fdmgroup.RealEstateApp.BidTests.testSetBidDate(BidTests.java:62)
+
