@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.fdmgroup.RealEstateApp.PlaywrightSmokeTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 39.996 s <<< FAILURE! - in com.fdmgroup.RealEstateApp.PlaywrightSmokeTest
+loginNavigationWorks  Time elapsed: 32.218 s  <<< ERROR!
+com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.fdmgroup.RealEstateApp.PlaywrightSmokeTest.loginNavigationWorks(PlaywrightSmokeTest.java:56)
+

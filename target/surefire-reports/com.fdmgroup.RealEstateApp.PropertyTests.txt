@@ -1,58 +1,140 @@
 -------------------------------------------------------------------------------
 Test set: com.fdmgroup.RealEstateApp.PropertyTests
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 1, Errors: 12, Skipped: 0, Time elapsed: 12.525 s <<< FAILURE! - in com.fdmgroup.RealEstateApp.PropertyTests
-testUpdatePropertyTransactionStatus  Time elapsed: 0.018 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setTransactionStatus(com.fdmgroup.RealEstateApp.model.TransactionStatus)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyTransactionStatus(PropertyTests.java:112)
+Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 39.404 s <<< FAILURE! - in com.fdmgroup.RealEstateApp.PropertyTests
+testPropertyAddBids  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdateProperty  Time elapsed: 0.01 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertyAddress(String)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdateProperty(PropertyTests.java:145)
+testUpdatePropertyTransactionStatus  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertyDescription  Time elapsed: 0.009 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertyDescription(String)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyDescription(PropertyTests.java:80)
+testUpdateProperty  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testPropertyFindById  Time elapsed: 0.014 s  <<< ERROR!
-java.util.NoSuchElementException: No value present
-	at com.fdmgroup.RealEstateApp.PropertyTests.testPropertyFindById(PropertyTests.java:43)
+testUpdatePropertyDescription  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertySeller  Time elapsed: 0.008 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setSeller(com.fdmgroup.RealEstateApp.model.User)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertySeller(PropertyTests.java:129)
+testCreateNewProperty  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testFindAllProperties  Time elapsed: 0.011 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.fdmgroup.RealEstateApp.PropertyTests.testFindAllProperties(PropertyTests.java:74)
+testPropertyFindById  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertyCurrentBid  Time elapsed: 0.008 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setCurrentBid(double)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyCurrentBid(PropertyTests.java:88)
+testUpdatePropertySeller  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertyNumberOfRooms  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setNumberOfRooms(int)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyNumberOfRooms(PropertyTests.java:104)
+testFindAllProperties  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testFindByPropertyAddress  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.getPropertyAddress()" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testFindByPropertyAddress(PropertyTests.java:49)
+testUpdatePropertyCurrentBid  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertySellingPrice  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setSellingPrice(double)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertySellingPrice(PropertyTests.java:96)
+testUpdatePropertyNumberOfRooms  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testPropertyDelete  Time elapsed: 0.009 s  <<< ERROR!
-org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null!; nested exception is java.lang.IllegalArgumentException: Entity must not be null!
-	at com.fdmgroup.RealEstateApp.PropertyTests.testPropertyDelete(PropertyTests.java:153)
-Caused by: java.lang.IllegalArgumentException: Entity must not be null!
-	at com.fdmgroup.RealEstateApp.PropertyTests.testPropertyDelete(PropertyTests.java:153)
+testFindByPropertyAddress  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertySize  Time elapsed: 0.007 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertySize(double)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertySize(PropertyTests.java:137)
+testGetPropertySize  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
-testUpdatePropertyType  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fdmgroup.RealEstateApp.model.Property.setPropertyType(com.fdmgroup.RealEstateApp.model.PropertyType)" because "property" is null
-	at com.fdmgroup.RealEstateApp.PropertyTests.testUpdatePropertyType(PropertyTests.java:120)
+testGetPropertyType  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
+
+testUpdatePropertySellingPrice  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
+
+testPropertyDelete  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
+
+testUpdatePropertySize  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
+
+testUpdatePropertyType  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/cristian-beniaminbalau/propertyProjectEstate.mv.db [1.4.200/7]
 
